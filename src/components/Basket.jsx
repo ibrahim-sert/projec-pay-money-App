@@ -36,12 +36,13 @@ const Basket = ({ basket, total, products, resetBasket }) => {
       color:#179b17;
     }
     .basket-reset-btn{
-      background:#61dafb;
+      background:tomato;
       height:1.8rem;
       padding: 0 1.2rem;
       font-size:1rem;
-      font-weight:500
-      cursor:pointer
+      font-weight:600;
+      cursor:pointer;
+      border-radius:.5rem
     }
     `}</style>
     </>

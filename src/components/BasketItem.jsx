@@ -10,6 +10,8 @@ const BasketItem = ({item,product}) => {
       .basket-item{
       padding-bottom:.5rem;
       font-size:1rem;
+      list-style-type:none;
+      font-weight:bold
       }
       .basket-item span{
         color:#999

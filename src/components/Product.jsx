@@ -85,21 +85,22 @@ const Product = ({product,basket,setBasket,total,money}) => {
           justify-content:center
         }
         .actions .buy-btn{
-          background:magenta;
+          background:tomato;
           font-size:.8rem;
           font-weight:500;
           border-radius:0 .6rem .6rem 0;
-          font-size:1rem;
+          font-size:.9rem;
           font-weight:bold;
           color:#555
           
         }
         .actions .sell-btn{
           background:#ccc;
-          font-size:.8rem;
+          font-size: .9rem;
           color:#333;
-          font-weight:500;
+          font-weight:bold;
           border-radius: .6rem 0 0 .6rem ;
+          padding:0 1.8rem
         }
 
         `}</style>
