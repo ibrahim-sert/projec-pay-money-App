@@ -17,12 +17,13 @@ const Product = ({product,basket,setBasket}) => {
   }
 
   const removeBasket =()=>{
-    const checkBasket= basket.find(item=>item.id===product.id)
-    checkBasket.amount-=1
-    if(checkBasket.amount===0){
+    const currentBasket= basket.find(item=>item.id===product.id)
+    const basketWithoutCurrent= basket.filter(item=>item.id!==product.id)
+    currentBasket.amount-=1
+    if(currentBasket.amount===0){
+      setBasket([...basketWithoutCurrent])
     }else{
-
-      setBasket([...basket.filter(item=>item.id!==product.id),checkBasket])
+      setBasket([...basketWithoutCurrent,currentBasket])
     }   
     
   }
@@ -32,7 +33,7 @@ const Product = ({product,basket,setBasket}) => {
         <h6  >{product.title}</h6>
         <div className="price">$ {product.price}</div>
         <div className="actions">
-          <button onClick={removeBasket}>Sat</button>
+          <button disabled={!basketItem} onClick={removeBasket}>Sat</button>
           <span className='amount'>{basketItem && (basketItem.amount || 0)}</span>
           <button onClick={addBasket}>Satın Al</button>
         </div>
