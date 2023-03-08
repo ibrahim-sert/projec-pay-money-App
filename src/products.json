@@ -3,21 +3,25 @@
     {
         "id":1,
         "title":"Sakız",
-        "price": 0.5
+        "price": 0.5,
+        "image": "https://images.migrosone.com/sanalmarket/product/07124238/07124238-be7324-1650x1650.jpg"
     },
     {
         "id":2,
         "title":"Kola",
-        "price": 6
+        "price": 6,
+        "image":"https://ayb.akinoncdn.com/products/2022/04/12/1740/c7515af9-86b8-425d-8fd8-b10aeb4a97e7_size780x780_quality60_cropCenter.jpg"
     },
     {
         "id":3,
         "title":"Ayakkabı",
-        "price": 400
+        "price": 400,
+        "image":"https://cdn.dsmcdn.com/ty6/product/media/images/20200711/19/4314427/76637880/0/0_org_zoom.jpg"
     },
     {
         "id":4,
         "title":"Araba",
-        "price": 40000
+        "price": 40000,
+        "image":"https://i4.hurimg.com/i/hurriyet/75/750x422/5f71aaccc03c0e2e28cc237d.jpg"
     }
 ]
